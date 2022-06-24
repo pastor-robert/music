@@ -4,6 +4,10 @@
   <<
     \new PianoStaff <<
       % Start pianostaff
+      \new ChordNames = chordNames {
+        \set chordChanges = ##t
+        \Chords
+      }
       \new Staff <<
         % Start Staff = RH
         \global
@@ -30,24 +34,26 @@
       \new Lyrics \lyricsto "Soprano" \VerseD
       \new Lyrics \lyricsto "Soprano" \VerseE
       \new Lyrics \lyricsto "Soprano" \VerseF
+      %{
       \new Staff <<
         % Start Staff = LH
         \global
         \clef "bass"
         \new Voice = "Tenor" <<
           % Start Voice = "Tenor"
-          % \Timeline
+          \Timeline
           \voiceOne
           \TenorMusic
         >>  % End Voice = "Tenor"
         \new Voice = "Bass" <<
           % Start Voice = "Bass"
           % \Timeline
-          \voiceTwo
+          %\voiceTwo
           \BassMusic
         >>  % End Voice = "Bass"
-      >>  % End Staff = LH
+      >>  %} % End Staff = LH
     >>  % End pianostaff
   >>
   \layout {  }
+  \midi { }
 }  % End score

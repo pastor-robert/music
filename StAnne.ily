@@ -13,6 +13,7 @@
 Timeline = {
   \time 4/4
   \partial 4
+  \tempo 4 = 120
   s4 | s1 | s2. s4 | s1 | s2. \bar "" \break
   s4 | s1 | s1 | s1 | s2. \bar ":|." \break
 }
