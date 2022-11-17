@@ -16,7 +16,7 @@
 Timeline = {
   \time 3/4
   \partial 4
-  % \tempo 4 = 120
+  \tempo 4 = 120
   s4 | s2. | s2. | s2. | s2 \bar "" \break
   s4 | s2. | s2. | s2. | s2 \bar "" \break
 
@@ -36,16 +36,16 @@ global = {
 }
 
 % Soprano rhythm
-patternA =  { c4    | c4 c4    c8 c8 | c4 c4 c4    | c4 c8 c8 c8 c8 | c4 c4 }
-patternB = { c4    | c4 c8 c8 c8 c8 | c4 c4 c4    | c4 c4    c4    | c2 }
-patternC =  { c8 c8 | c4 c8 c8 c8 c8 | c4 c4 c4    | c4 c8 c8 c8 c8 | c4 c4 }
-patternCC = { c4    | c4 c8 c8 c8 c8 | c4 c4 c4    | c4 c4    c4    | c2 }
-patternD =  { c4    | c4 c4    c8 c8 | c4 c4 c4    | c4 c8 c8 c8 c8 | c4 c4 }
-patternDD = { c4    | c4 c8 c8 c8 c8 | c4 c4 c4    | c4 c4    c4    | c2 }
+patternA =  { c4    | c4 c4    c8 c8 | c4 c4 c4 | c4 c8[ c8] c8[ c8] | c4 c4 }
+patternB = { c4     | c4 c8[ c8] c8[ c8] | c4 c4 c4 | c4 c4    c4    | c2 }
+patternC =  { c8 c8 | c4 c8[ c8] c8[ c8] | c4 c4 c4 | c4 c8[ c8] c8[ c8] | c4 c4 }
+patternCC = { c4    | c4 c8[ c8] c8[ c8] | c4 c4 c4 | c4 c4    c4    | c2 }
+patternD =  { c4    | c4 c4    c8[ c8] | c4 c4 c4 | c4 c8[ c8] c8[ c8] | c4 c4 }
+patternDD = { c4    | c4 c8[ c8] c8[ c8] | c4 c4 c4 | c4 c4    c4    | c2 }
 
 SopranoMusic = \changePitch { \patternA \patternB \patternA \patternB \patternC \patternB \patternA \patternB } \relative g' {
   d | g b d c | b g g | a c b a g | f-sharp d
-  d | g b a g fs | d c e | d  g f-sharp | g 
+  d | g b a g fs | e c e | d  g f-sharp | g 
   d | g b d c | b g g | a c b a g | f-sharp d
   d | g b a g fs | e c e | d g fs | g
   b c | d b c d e | d c b | c a b c d | c b
