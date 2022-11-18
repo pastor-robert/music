@@ -2,7 +2,6 @@
 \include "common.ily"
 \include "changePitch.ily"
 
-
 \language "english"
 
 \header {
@@ -10,12 +9,13 @@
   piece = \markup \smallCaps "The Ash Grove"
   composer =  "Welsh folk tune; harm. by Leland Sateren, 1972"
   % composerB = "harm. by Leland Sateren, 1972"
-  meter = "6 6 11.6 6 11 D"
+  meter = "6.6.11.6.6.11 D"
 }
 
 Timeline = {
   \time 3/4
   \partial 4
+  \set Staff.autoBeaming = ##f
   \tempo 4 = 120
   s4 | s2. | s2. | s2. | s2 \bar "" \break
   s4 | s2. | s2. | s2. | s2 \bar "" \break
@@ -30,12 +30,9 @@ global = {
 }
 
 % Soprano rhythm
-patternA =  { c4    | c4 c4    c8 c8 | c4 c4 c4 | c4 c8[ c8] c8[ c8] | c4 c4 }
+patternA =  { c4    | c4 c4    c8[ c8] | c4 c4 c4 | c4 c8[ c8] c8[ c8] | c4 c4 }
 patternB = { c4     | c4 c8[ c8] c8[ c8] | c4 c4 c4 | c4 c4    c4    | c2 }
-patternC =  { c8 c8 | c4 c8[ c8] c8[ c8] | c4 c4 c4 | c4 c8[ c8] c8[ c8] | c4 c4 }
-patternCC = { c4    | c4 c8[ c8] c8[ c8] | c4 c4 c4 | c4 c4    c4    | c2 }
-patternD =  { c4    | c4 c4    c8[ c8] | c4 c4 c4 | c4 c8[ c8] c8[ c8] | c4 c4 }
-patternDD = { c4    | c4 c8[ c8] c8[ c8] | c4 c4 c4 | c4 c4    c4    | c2 }
+patternC =  { c8[ c8] | c4 c8[ c8] c8[ c8] | c4 c4 c4 | c4 c8[ c8] c8[ c8] | c4 c4 }
 
 SopranoMusic = \changePitch { \patternC \patternB \patternA \patternB } \relative g' {
   b c | d b c d e | d c b | c a b c d | c b
@@ -66,8 +63,8 @@ AltoMusic = \changePitch {
 % Tenor Rhythm
 tenorA = { c4    | c4 c4 c4       | c4 c4 c4 | c2.            | c4 c4 }
 tenorB = { c4    | c4 c2          | c2.      | c2 c4          | c2 }
-tenorC = { c8 c8 | c4 c8 c8 c8 c8 | c4 c4 c4 | c4 c8 c8 c8 c8 | c4 c4 }
-tenorD = { c4    | c4 c8 c8 c8 c8 | c2 c4    | c8 c8 c4 c4    | c4 c4 }
+tenorC = { c8[ c8] | c4 c8[ c8] c8[ c8] | c4 c4 c4 | c4 c8[ c8] c8[ c8] | c4 c4 }
+tenorD = { c4    | c4 c8[ c8] c8[ c8] | c2 c4    | c8[ c8] c4 c4    | c4 c4 }
 
 % Tenor Melody
 tenorMA = \relative g { d | b' d d | d b b | c | a fs }
@@ -88,7 +85,7 @@ TenorMusic = \changePitch {
 bassA = { c4    | c2    c4       | c2    c4 | c4    c4    c4 | c2 }
 bassB = { c4    | c2 c4          | c4 c4 c4 | c2.            | c2 }
 bassC = { c4    | c2.            | c2.      | c2.            | c2 }
-bassD = { c4    | c2. | c4 c4    c4 | c8 c8 c4    c4 | c4 c4 }
+bassD = { c4    | c2. | c4 c4    c4 | c8[ c8] c4    c4 | c4 c4 }
 
 % Bass Melody
 bassMA = \relative g { d | g fs | g e | c a c | d }

@@ -17,6 +17,7 @@ Timeline = {
   \time 3/4
   \partial 4
   \tempo 4 = 120
+  \set Staff.autoBeaming = ##f
   s4 | s2. | s2. | s2. | s2 \bar "" \break
   s4 | s2. | s2. | s2. | s2 \bar "" \break
 
@@ -36,9 +37,9 @@ global = {
 }
 
 % Soprano rhythm
-patternA =  { c4    | c4 c4    c8 c8 | c4 c4 c4 | c4 c8[ c8] c8[ c8] | c4 c4 }
+patternA =  { c4    | c4 c4    c8[ c8] | c4 c4 c4 | c4 c8[ c8] c8[ c8] | c4 c4 }
 patternB = { c4     | c4 c8[ c8] c8[ c8] | c4 c4 c4 | c4 c4    c4    | c2 }
-patternC =  { c8 c8 | c4 c8[ c8] c8[ c8] | c4 c4 c4 | c4 c8[ c8] c8[ c8] | c4 c4 }
+patternC =  { c8[ c8] | c4 c8[ c8] c8[ c8] | c4 c4 c4 | c4 c8[ c8] c8[ c8] | c4 c4 }
 patternCC = { c4    | c4 c8[ c8] c8[ c8] | c4 c4 c4 | c4 c4    c4    | c2 }
 patternD =  { c4    | c4 c4    c8[ c8] | c4 c4 c4 | c4 c8[ c8] c8[ c8] | c4 c4 }
 patternDD = { c4    | c4 c8[ c8] c8[ c8] | c4 c4 c4 | c4 c4    c4    | c2 }
@@ -80,8 +81,8 @@ AltoMusic = \changePitch {
 % Tenor Rhythm
 tenorA = { c4    | c4 c4 c4       | c4 c4 c4 | c2.            | c4 c4 }
 tenorB = { c4    | c4 c2          | c2.      | c2 c4          | c2 }
-tenorC = { c8 c8 | c4 c8 c8 c8 c8 | c4 c4 c4 | c4 c8 c8 c8 c8 | c4 c4 }
-tenorD = { c4    | c4 c8 c8 c8 c8 | c2 c4    | c8 c8 c4 c4    | c4 c4 }
+tenorC = { c8[ c8] | c4 c8[ c8] c8[ c8] | c4 c4 c4 | c4 c8[ c8] c8[ c8] | c4 c4 }
+tenorD = { c4    | c4 c8[ c8] c8[ c8] | c2 c4    | c8[ c8] c4 c4    | c4 c4 }
 
 % Tenor Melody
 tenorMA = \relative g { d | b' d d | d b b | c | a fs }
