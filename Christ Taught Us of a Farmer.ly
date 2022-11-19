@@ -11,8 +11,6 @@
   }
   copyright = \markup \center-column { 
 
-Text: Copyright © 2000 by Carolyn Winfrey Gillette. All rights reserved.
-Copied from Songs of Grace: New Hymns for God and Neighbor by Carolyn Winfrey Gillette (Upper Room Books, 2009).
 
     \line { Copyright © 2000 by Carolyn Winfrey Gillette. All rights reserved.   }
     \line { 

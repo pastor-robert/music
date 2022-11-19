@@ -8,7 +8,7 @@
         \set chordChanges = ##t
         % \Chords
       }
-      \new Staff <<
+      \new Staff \with { \consists "Merge_rests_engraver" } <<
         % Start Staff = RH
         \global
         \clef "treble"
@@ -35,7 +35,7 @@
       \new Lyrics \lyricsto "Soprano" \VerseE
       \new Lyrics \lyricsto "Soprano" \VerseF
       
-      \new Staff <<
+      \new Staff \with { \consists "Merge_rests_engraver" } <<
         % Start Staff = LH
         \global
         \clef "bass"
