@@ -4,7 +4,7 @@
 \include "LobeDenHerren.ily"
 
 \header {
-  title =  "Christ Taught Us of a Farmer"
+  title =  "Who Is My Neighbor?"
   poet = \markup \column { 
     \line { Carolyn Winfrey Gillette }
     % \line { Biblical Reference: Galatians }
