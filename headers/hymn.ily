@@ -25,7 +25,7 @@
           % Start Voice = "Alto"
           % \Timeline
           \voiceTwo
-          \AltoMusic
+          \stemUp \AltoMusic
         >>  % End Voice = "Alto"
       >>  % End Staff = RH
       \new Lyrics \lyricsto "Soprano" \VerseA
@@ -43,7 +43,7 @@
           % Start Voice = "Tenor"
           \Timeline
           \voiceOne
-          \TenorMusic
+          \stemDown \TenorMusic
         >>  % End Voice = "Tenor"
         \new Voice = "Bass" <<
           % Start Voice = "Bass"
@@ -51,7 +51,7 @@
           \voiceTwo
           \BassMusic
         >>  % End Voice = "Bass"
-      >>  %} % End Staff = LH
+      >>  % End Staff = LH
     >>  % End pianostaff
   >>
   \layout {  }
