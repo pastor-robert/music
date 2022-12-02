@@ -1,7 +1,6 @@
 LY = lilypond
-LYFLAGS = -I $(PWD)/public-domain -I $(PWD)/headers --pdf --svg
+LYFLAGS = -I $(PWD)/public-domain -I $(PWD)/headers --pdf
 
-H = headers/common.ily headers/hymn.ily headers/
 H = \
     headers/changePitch.ily \
     headers/common.ily \
