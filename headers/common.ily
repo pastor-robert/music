@@ -15,6 +15,7 @@
   right-margin = 18
   markup-system-spacing.basic-distance = 20
   ragged-bottom = ##t
+  #(set-paper-size "statement")
 }  % End paper block
 
 \paper {
